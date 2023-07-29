@@ -48,15 +48,16 @@ function ProjectsBox(props) {
           <h1 className="project">{props.title}</h1>
         </Box>
         <img
+          className="ProjectImg"
           alt="DarkhorseStocks"
           src={props.img}
-          style={{ width: "83%", height: "70%" }}
+          style={{ height: "70%" }}
         ></img>
       </Box>
       <Box
         sx={{
           height: { sm: "10rem", xs: "15rem" },
-          width: { sm: "36rem", xs: "80%" },
+          width: { sm: "36rem", xs: "85%" },
           zIndex: "1",
           backgroundColor: "#0c2a40",
           position: "relative",
@@ -71,6 +72,8 @@ function ProjectsBox(props) {
           },
           marginTop: { sm: "0", xs: "-2rem" },
           fontSize: { sm: "0.8rem", xs: "1.1rem" },
+          paddingTop: { sm: "0rem", xs: "0.5rem" },
+          paddingBottom: { sm: "0rem", xs: "0.5rem" },
         }}
       >
         <p

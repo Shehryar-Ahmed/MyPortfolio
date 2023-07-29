@@ -35,12 +35,6 @@ function Navbar(props) {
   const handleSmoothScroll = (page) => {
     setActivePage(page);
     const targetElement = document.getElementById(page);
-    // console.log(targetElement);
-    // if (targetElement) {
-    //   targetElement.scrollIntoView({
-    //     behavior: "smooth",
-    //   });
-    // }
     setAnchorElNav(null);
     setTimeout(() => {
       if (targetElement) {
@@ -145,14 +139,18 @@ function Navbar(props) {
             }}
             open={Boolean(anchorElNav)}
             onClose={handleCloseNavMenu}
+            disableScrollLock
             sx={{
               display: { xs: "flex", md: "none" },
-              minWidth: "100vw", // Take up the whole horizontal space
-              position: "fixed",
+              width: "97vw", // Take up the whole horizontal space
+              // height: "100%",
+              // position: "fixed",
+              marginRight: "1rem",
               top: 0,
               left: 0,
               alignItems: "center",
               justifyContent: "center",
+              backgroundColor: "transparent",
             }}
           >
             {pages.map((page) => (

@@ -27,6 +27,8 @@ function Form() {
           console.log(error.text);
         }
       );
+
+    form.current.reset();
   };
   return (
     <form ref={form} onSubmit={sendEmail}>

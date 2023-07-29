@@ -263,6 +263,10 @@ code {
   font-size: 3rem;
 }
 
+.ProjectImg {
+  width: 83%;
+}
+
 @media (max-width: 1200px){
   html {
     font-size: 90%;
@@ -298,7 +302,7 @@ code {
 }
 @media (max-width: 680px){
   html {
-    font-size: 55%;
+    font-size: 65%;
   }
   #About {
     padding-left: 11rem;
@@ -328,9 +332,14 @@ code {
     padding-right: 3.5rem;
   }
 }
+@media (max-width: 600px){
+  .ProjectImg {
+    width: 90%;
+  }
+}
 @media (max-width: 520px){
   html {
-    font-size: 55%;
+    /* font-size: 55%; */
   }
   #About {
     padding-left: 8rem;
