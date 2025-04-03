@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/MyPortfolio/static/css/main.c964fd95.css",
+    "main.js": "/MyPortfolio/static/js/main.9578af0d.js",
+    "static/js/787.1ed0c42c.chunk.js": "/MyPortfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/port4.jpg": "/MyPortfolio/static/media/port4.8cfaeab2cf70ee076acb.jpg",
+    "static/media/ElasticSuite.png": "/MyPortfolio/static/media/ElasticSuite.3bfb19dbc2931b71e8ac.png",
+    "static/media/RoutePlanner.png": "/MyPortfolio/static/media/RoutePlanner.dd4bdb7cea74a74a9db0.png",
+    "static/media/Darkhorse.png": "/MyPortfolio/static/media/Darkhorse.031f1e62831aab25e4d9.png",
+    "static/media/Molista.png": "/MyPortfolio/static/media/Molista.507e3bff2e8a589f6e7b.png",
+    "static/media/Kixie.png": "/MyPortfolio/static/media/Kixie.69c68a9d15ad89283924.png",
+    "static/media/Termina.png": "/MyPortfolio/static/media/Termina.6e16cd2ce341715315c8.png",
+    "static/media/Other.png": "/MyPortfolio/static/media/Other.3f2c0a82595372006114.png",
+    "static/media/Extranet.png": "/MyPortfolio/static/media/Extranet.d96f3ac9e3743e6081fc.png",
+    "static/media/CryptoCoinControl.png": "/MyPortfolio/static/media/CryptoCoinControl.8fff292cf26315330306.png",
+    "static/media/jest.png": "/MyPortfolio/static/media/jest.3b2aecf15d40f6b93bf5.png",
+    "static/media/cyp.png": "/MyPortfolio/static/media/cyp.8afc74c0e6a544d07b81.png",
+    "static/media/next.png": "/MyPortfolio/static/media/next.ad7ace1b0824630fe7a9.png",
+    "index.html": "/MyPortfolio/index.html",
+    "main.c964fd95.css.map": "/MyPortfolio/static/css/main.c964fd95.css.map",
+    "main.9578af0d.js.map": "/MyPortfolio/static/js/main.9578af0d.js.map",
+    "787.1ed0c42c.chunk.js.map": "/MyPortfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c964fd95.css",
+    "static/js/main.9578af0d.js"
+  ]
+}
