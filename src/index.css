@@ -26,13 +26,11 @@ code {
   cursor: pointer;
   letter-spacing: 1px;
   transition: 0.5s;
-  /* animation-delay: 0s; */
 }
 
 .hireMe:hover {
   background-color: transparent;
   color: #00abf0;
-  /* animation-delay: 0s; */
 }
 
 .imageCoverer {
@@ -76,7 +74,6 @@ code {
   content: '';
   width: 0;
   height: 100%;
-  /* z-index: -1; */
   border-right: 2px solid #00abf0;
   animation: homeBgCursor 6s linear infinite;
   animation-delay: 2s;  
@@ -86,7 +83,7 @@ code {
   0%,
   10%,
   100% {
-    background-position:-20rem 0
+    background-position:-16rem 0
   }
   65%,
   85% {
@@ -145,11 +142,9 @@ code {
 @keyframes slideInFromRight { 
   0% {
     opacity: 0;
-    /* transform: translateX(-100%); */
   }
   100% {
     opacity: 1;
-    /* transform: translateX(0); */
   }
 }
 
@@ -237,7 +232,7 @@ code {
 }
 
 #ContactHeading {
-  padding-top: 5rem;
+  /* padding-top: 1.5rem; */
 }
 
 .css-6hp17o-MuiList-root-MuiMenu-list {
@@ -297,7 +292,7 @@ code {
     padding-top: 1.4rem;
   }
   #ContactHeading {
-    padding-top: 3.5rem;
+    /* padding-top: 1.5rem; */
   }
 }
 @media (max-width: 680px){
@@ -322,7 +317,7 @@ code {
     padding-top: 1rem;
   }
   #ContactHeading {
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
   }
   .MenuText {
     font-size: 1.6rem !important;
@@ -362,4 +357,13 @@ code {
   .nameHead{
     font-size: 2.8rem;
   }
+}
+
+@keyframes projectFadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.project-fade-in {
+  animation: projectFadeIn 0.1s ease forwards;
 }

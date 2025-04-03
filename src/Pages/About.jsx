@@ -60,36 +60,14 @@ function About() {
           animationDelay: "2.6s",
         }}
       >
-        Frontend Developer!
+        Web Developer & Automation Tester!
       </h3>
       <p
         className="slide-in"
         style={{ fontSize: "1rem", marginTop: "-1rem", animationDelay: "2.9s" }}
       >
-        Hey there! I'm a young front-end dev hailing from Islamabad, Pakistan.
-        My coding adventure began at just 14 with Python's Tkinter for GUI
-        (spoiler: it didn't tickle my fancy). So, I switched to web dev with
-        JavaScript and fell head over heels for React! But here's the plot
-        twist—I've got a secret love affair with testing! Shh! When I'm not
-        coding, you'll find me fueled by cricket passion, strategizing my moves
-        in chess, and binge-watching every awesome series and anime out there.
-        Got any recommendations? I'm all ears!
+        Hey there! I'm a web developer from Islamabad, Pakistan. My coding journey started when I was just 14, tinkering with Python's Tkinter for GUIs. But it wasn't long before I found my true passion—web development. JavaScript drew me in, and I quickly fell in love with React.js, followed by Next.js. But the journey didn't stop there! I got hooked on testing, first with Jest for component testing and then with Cypress for end-to-end testing. When I'm not deep in code, you'll find me cheering for my favorite cricket team, sharpening my chess strategies, or binge-watching the latest series and anime. Got any recommendations? I'm all ears!
       </p>
-      {/* <div
-        style={{
-          display: "flex",
-          //   padding: "10px",
-          paddingLeft: "0px",
-        }}
-        className="btnBox"
-      >
-        <button
-          className="hireMe slide-in"
-          style={{ width: "120%", animationDelay: "3.1s" }}
-        >
-          Read More
-        </button>
-      </div> */}
     </div>
   );
 }
