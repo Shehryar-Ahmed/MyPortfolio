@@ -1,4 +1,3 @@
-import { useContext } from "react";
 import Navbar from "./Components/Navbar";
 import ContStates from "./Context/contStates";
 import About from "./Pages/About";

@@ -193,10 +193,6 @@ code {
   padding-top: 3.3rem;
 }
 
-#ContactHeading {
-  /* padding-top: 1.5rem; */
-}
-
 .css-6hp17o-MuiList-root-MuiMenu-list {
   background-color: #0c2a40;
 }
@@ -253,9 +249,6 @@ code {
   #SkillsHeading {
     padding-top: 1.4rem;
   }
-  #ContactHeading {
-    /* padding-top: 1.5rem; */
-  }
 }
 @media (max-width: 680px) {
   html {
@@ -278,9 +271,6 @@ code {
   #SkillsHeading {
     padding-top: 1rem;
   }
-  #ContactHeading {
-    /* padding-top: 1rem; */
-  }
   .MenuText {
     font-size: 1.6rem !important;
   }
@@ -295,9 +285,6 @@ code {
   }
 }
 @media (max-width: 520px) {
-  html {
-    /* font-size: 55%; */
-  }
   #About {
     padding-left: 8rem;
     padding-right: 8rem;

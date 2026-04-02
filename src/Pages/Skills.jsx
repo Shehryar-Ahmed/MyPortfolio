@@ -2,10 +2,10 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faJs, faReact, faGithub } from "@fortawesome/free-brands-svg-icons";
 import {
-  SiTypescript, SiMui, SiTailwindcss, SiExpress,
+  SiTypescript, SiMui, SiExpress,
   SiApachejmeter, SiPostman, SiMongodb, SiMysql,
   SiJira, SiConfluence, SiOpenai, SiPostgresql,
-  SiSelenium, SiOracle,
+  SiOracle,
   SiTwilio,
 } from "react-icons/si";
 import jest from "../Assets/jest.png";
