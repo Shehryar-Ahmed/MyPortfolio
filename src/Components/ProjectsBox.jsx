@@ -51,7 +51,7 @@ function ProjectsBox(props) {
           className="ProjectImg"
           alt="DarkhorseStocks"
           src={props.img}
-          style={{ height: "70%" }}
+          style={{ height: "70%",width: "100%", objectFit: "contain" }}
         ></img>
       </Box>
       <Box

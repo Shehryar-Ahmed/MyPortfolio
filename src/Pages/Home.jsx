@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 function Home() {
   const handleSmoothScroll = (page) => {
@@ -9,6 +9,39 @@ function Home() {
       });
     }
   };
+
+  // inside Home(), before the return:
+  const titles = ["Web Developer", "QA Engineer"];
+  const [displayText, setDisplayText] = useState("");
+  const [titleIndex, setTitleIndex] = useState(0);
+  const [isErasing, setIsErasing] = useState(false);
+  const timeoutRef = useRef(null);
+
+  useEffect(() => {
+    const currentTitle = titles[titleIndex];
+
+    if (!isErasing && displayText === currentTitle) {
+      // Fully typed — pause then start erasing
+      timeoutRef.current = setTimeout(() => setIsErasing(true), 2000);
+    } else if (isErasing && displayText === "") {
+      // Fully erased — move to next title
+      setIsErasing(false);
+      setTitleIndex((prev) => (prev + 1) % titles.length);
+    } else if (!isErasing) {
+      // Typing
+      timeoutRef.current = setTimeout(() => {
+        setDisplayText(currentTitle.slice(0, displayText.length + 1));
+      }, 100);
+    } else {
+      // Erasing
+      timeoutRef.current = setTimeout(() => {
+        setDisplayText(displayText.slice(0, -1));
+      }, 60);
+    }
+
+    return () => clearTimeout(timeoutRef.current);
+  }, [displayText, isErasing, titleIndex]);
+
   return (
     <div
       id="Home"
@@ -39,17 +72,20 @@ function Home() {
           className="text-animate slide-in"
           style={{ animationDelay: "1.1s" }}
         >
-          <h3 style={{ marginBottom: "0rem" }}>Web Developer</h3>
+          <h3>
+            {displayText}
+            <span className="cursor">|</span>
+          </h3>
         </span>
         <p
           className="slide-in"
           style={{ fontSize: "1rem", maxWidth: "60vw", animationDelay: "1.4s" }}
         >
-          As a passionate web developer, I take pride in transforming ideas
-          into beautiful, interactive web solutions. With precision and
-          elegance, I craft clean code that bridges the gap between design and
-          functionality. Welcome to my world of code, where creativity meets
-          seamless functionality.
+          I'm a passionate Web Developer and QA Engineer who takes pride in
+          building beautiful, interactive web solutions while ensuring they work
+          flawlessly. From crafting clean, elegant code to designing
+          comprehensive test suites, I bridge the gap between development and
+          quality, delivering experiences that are both functional and reliable.
         </p>
         <div
           style={{
